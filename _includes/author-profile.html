@@ -77,6 +77,9 @@
           </span>
         </li>
       {% endif %}
+      {% if author.cv %}
+        <li><a href="{{ author.cv | relative_url }}" download="Yujian_Liu_CV.pdf" target="_self"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a></li>
+      {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       {% endif %}
@@ -177,6 +180,9 @@
       {% endif %}
       {% if author.wechat_qr %}
         <a href="javascript:void(0)" title="WeChat" role="button" aria-label="WeChat"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.cv %}
+        <a href="{{ author.cv | relative_url }}" download="Yujian_Liu_CV.pdf" target="_self" title="CV"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.stackoverflow %}
         <a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i></a>
