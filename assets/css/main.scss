@@ -143,19 +143,24 @@
     background: rgba($link-color, 0.08);
 }
 
-/* Hide browser-extension icons injected into/near project action links */
+/* Match square chip style for icons next to Paper / Details / etc. */
 .page__content .paper-box .paper-box-text a img,
 .page__content .paper-box .paper-box-text a svg,
-.page__content .paper-box .paper-box-text a::before,
-.page__content .paper-box .paper-box-text a::after {
-    display: none !important;
-    content: none !important;
-    background: none !important;
-    width: 0 !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
+.page__content .paper-box .paper-box-text a + img,
+.page__content .paper-box .paper-box-text a + svg,
+.page__content .paper-box .paper-box-text p > img,
+.page__content .paper-box .paper-box-text p > svg {
+    display: inline-block !important;
+    width: 1.55rem !important;
+    height: 1.55rem !important;
+    margin: 0.2rem 0.55rem 0.2rem 0 !important;
+    padding: 0.12rem !important;
+    border: 1px solid $link-color !important;
+    border-radius: 4px !important;
+    vertical-align: middle !important;
+    box-sizing: border-box !important;
+    object-fit: contain !important;
+    background: #fff !important;
 }
 
 .fig-caption,
