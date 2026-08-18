@@ -57,7 +57,7 @@ I am currently applying to **PhD programs for Spring/Fall 2027** admission. Pros
 
 Predicts protein–ligand binding affinity from electron-density point clouds, remaining robust when atomic coordinates are noisy or come from predicted structures.
 
-<a class="js-project-detail" href="/projects/ecloudbind/" data-detail-url="/projects/ecloudbind/">Details</a> [[Paper]](https://doi.org/10.1038/s41467-026-74196-5)
+<a class="js-project-detail" href="/projects/ecloudbind/" data-detail-url="/projects/ecloudbind/">Details</a> [Paper](https://doi.org/10.1038/s41467-026-74196-5)
 
 </div>
 </div>
@@ -110,7 +110,7 @@ An end-to-end WSI framework that turns the slide resolution pyramid into cross-s
 
 A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head pose, facial expression, and lip motion in one pipeline.
 
-<a class="js-project-detail" href="/projects/syncanimation/" data-detail-url="/projects/syncanimation/">Details</a> [[Project]](https://syncanimation.github.io/) [[arXiv]](https://arxiv.org/abs/2501.14646)
+<a class="js-project-detail" href="/projects/syncanimation/" data-detail-url="/projects/syncanimation/">Details</a> [Project](https://syncanimation.github.io/) [arXiv](https://arxiv.org/abs/2501.14646)
 
 </div>
 </div>
@@ -124,7 +124,7 @@ A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head
 
 Shows that a small set of informative high-resolution patches, selected and reconstructed through cascaded dual-scale learning, is sufficient for robust WSI representation.
 
-<a class="js-project-detail" href="/projects/cdsr/" data-detail-url="/projects/cdsr/">Details</a> [[arXiv]](https://arxiv.org/abs/2508.01641)
+<a class="js-project-detail" href="/projects/cdsr/" data-detail-url="/projects/cdsr/">Details</a> [arXiv](https://arxiv.org/abs/2508.01641)
 
 </div>
 </div>
@@ -138,7 +138,7 @@ Shows that a small set of informative high-resolution patches, selected and reco
 
 Improves 3D Gaussian head avatars by jointly correcting facial geometry and recovering texture during rendering, instead of relying on a frozen tracked mesh.
 
-<a class="js-project-detail" href="/projects/mogaface/" data-detail-url="/projects/mogaface/">Details</a> [[arXiv]](https://arxiv.org/abs/2508.01218)
+<a class="js-project-detail" href="/projects/mogaface/" data-detail-url="/projects/mogaface/">Details</a> [arXiv](https://arxiv.org/abs/2508.01218)
 
 </div>
 </div>
@@ -152,7 +152,7 @@ Qingquan Wang, **Yujian Liu**, Chenchen Li, Bin Xu, Shidang Xu<sup>&dagger;</sup
 
 Reviews how machine learning can guide nanoparticle synthesis and formulation, and help model nano–bio interactions along the cancer drug-delivery pipeline, from circulation and tumor extravasation to penetration and cellular uptake.
 
-[[Paper]](https://doi.org/10.1002/advs.202503138)
+[Paper](https://doi.org/10.1002/advs.202503138)
 
 </div>
 </div>
