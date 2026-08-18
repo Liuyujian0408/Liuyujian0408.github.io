@@ -27,6 +27,21 @@
     .sidebar .contact { list-style:none; padding:0; margin:1rem 0 0; text-align:left; font-size:.9rem; }
     .sidebar .contact li { margin:.5rem 0; display:flex; align-items:flex-start; gap:.5rem; }
     .sidebar .contact i { width:1.25rem; text-align:center; margin-top:.2rem; color:#666; }
+    .sidebar .contact li.wechat { position:relative; }
+    .sidebar .contact a.wechat-link { position:relative; display:inline-flex; align-items:center; gap:.5rem; color:var(--link); cursor:default; text-decoration:none; }
+    .sidebar .contact a.wechat-link:hover { text-decoration:none; }
+    .sidebar .contact .wechat-tip {
+      display:none; position:absolute; left:50%; bottom:calc(100% + 10px); transform:translateX(-50%);
+      padding:8px; background:#fff; border:1px solid var(--border); border-radius:6px;
+      box-shadow:0 6px 18px rgba(0,0,0,.15); z-index:30; pointer-events:none;
+    }
+    .sidebar .contact .wechat-tip::after {
+      content:""; position:absolute; top:100%; left:50%; margin-left:-6px;
+      border:6px solid transparent; border-top-color:#fff; filter:drop-shadow(0 1px 0 var(--border));
+    }
+    .sidebar .contact .wechat-tip img { display:block; width:140px; height:auto; }
+    .sidebar .contact a.wechat-link:hover .wechat-tip,
+    .sidebar .contact a.wechat-link:focus .wechat-tip { display:block; }
     .paper-box { display:flex; flex-wrap:wrap; align-items:center; border-bottom:1px solid var(--border); padding:2em 0; gap:1.5rem; }
     .paper-box-image { flex:0 0 380px; width:380px; max-width:100%; display:flex; justify-content:center; align-items:center; }
     .paper-box-image > div { display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; }
@@ -45,7 +60,7 @@
     <a href="#education">Education</a>
     <a href="#experience">Experience</a>
     <a href="#research-projects">Research Projects</a>
-    <a href="#vlog">Vlog</a>
+    <a href="#awards">Awards</a>
   </nav>
 </header>
 <div class="layout">
@@ -58,16 +73,22 @@
       <li><i class="fas fa-envelope"></i><a href="mailto:liuyujian0408@gmail.com">liuyujian0408@gmail.com</a></li>
       <li><i class="fas fa-phone"></i><a href="tel:+8618774082596">+86 18774082596</a></li>
       <li><i class="fab fa-github"></i><a href="https://github.com/Liuyujian0408">Liuyujian0408</a></li>
+      <li class="wechat">
+        <a class="wechat-link" href="javascript:void(0)" title="WeChat" role="button" aria-label="WeChat QR code">
+          <i class="fab fa-weixin"></i> WeChat
+          <span class="wechat-tip"><img src="images/wechat-qr.jpg" alt="WeChat QR code"></span>
+        </a>
+      </li>
     </ul>
   </aside>
   <main>
     <section id="about-me" class="anchor">
-      <p>I am <strong>Yujian Liu</strong>, a master's graduate in Biomedical Engineering from <a href="https://www.scut.edu.cn/en/">South China University of Technology (SCUT)</a>, advised by Prof. <a href="https://www2.scut.edu.cn/bio/">Shidang Xu</a>. I also work as an algorithm intern at <strong>AISHIWEILAI AI Research</strong> under Dr. Xiaoli Liu.</p>
+      <p>I am <strong>Yujian Liu</strong>, from China. I am a master's graduate in Biomedical Engineering from South China University of Technology, advised by Prof. <a href="https://www2.scut.edu.cn/bmse_en/2019/1216/c21293a478201/page.htm">Shidang Xu</a>. I also work as an algorithm intern at Beijing Yuaiweiwu Technology Co., Ltd. under Dr. Xiaoli Liu.</p>
       <p>My research interests include:</p>
       <ul>
         <li>High-fidelity <strong>3D Gaussian avatars</strong> and speech-driven facial animation</li>
         <li><strong>Whole slide image (WSI)</strong> analysis and computational pathology</li>
-        <li><strong>AI for drug discovery</strong>, including protein–ligand interaction prediction</li>
+        <li><strong>AI for drug discovery</strong>, including protein–ligand interaction prediction and molecular generation</li>
       </ul>
       <p>I am currently applying to <strong>PhD programs for Spring/Fall 2027</strong> admission. Prospective advisors and collaborators are welcome to reach out via <a href="mailto:liuyujian0408@gmail.com">email</a>.</p>
     </section>
@@ -75,43 +96,53 @@
     <section id="education" class="anchor">
       <h1>🎓 Education</h1>
       <ul>
-        <li><em>2023.09 – 2026.06</em>, <a href="https://www.scut.edu.cn/en/">South China University of Technology</a>, Guangzhou, China — <strong>M.S. in Biomedical Engineering</strong> (GPA: 87.64/100)<br><em>Awards:</em> National Scholarship for Graduate Students</li>
-        <li><em>2019.09 – 2023.06</em>, <a href="https://www.csuft.edu.cn/">Central South University of Forestry and Technology</a>, Changsha, China — <strong>B.S. in Communication Engineering</strong> (GPA: 88.88/100)<br><em>Awards:</em> Provincial Outstanding Graduate; First Prize Scholarship</li>
+        <li><em>2023.09 – 2026.06</em>, <a href="https://www.scut.edu.cn/en/">South China University of Technology</a>, Guangzhou, China — M.S. in Biomedical Engineering (GPA: 87.64/100)<br><em>Awards:</em> National Scholarship for Graduate Students</li>
+        <li><em>2019.09 – 2023.06</em>, <a href="https://www.csuft.edu.cn/">Central South University of Forestry and Technology</a>, Changsha, China — B.S. in Communication Engineering (GPA: 88.88/100, Rank 8/106)<br><em>Awards:</em> Postgraduate recommendation; Provincial Outstanding Graduate; First Prize Scholarship</li>
       </ul>
     </section>
 
     <section id="experience" class="anchor">
       <h1>💼 Experience</h1>
       <ul>
-        <li><em>2024.07 – Present</em>, <strong>Algorithm Intern</strong>, AISHIWEILAI AI Research, Beijing, China<br>Supervised by Dr. Xiaoli Liu.</li>
-        <li><em>2026.07 – Present</em>, <strong>Research Assistant</strong>, SCUT, Guangzhou, China<br>Supervised by Prof. Shidang Xu.</li>
+        <li><em>2024.07 – Present</em>, <strong>Algorithm Intern</strong>, Beijing Yuaiweiwu Technology Co., Ltd., Beijing, China<br>Supervised by Dr. Xiaoli Liu.</li>
+        <li><em>2026.07 – Present</em>, <strong>Research Assistant</strong>, South China University of Technology, Guangzhou, China<br>Supervised by Prof. Shidang Xu.</li>
       </ul>
     </section>
 
     <section id="research-projects" class="anchor">
       <h1>🔬 Research Projects</h1>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/syncanimation.png" alt="Fig. 1 SyncAnimation"><div class="badge">Accepted by IJCAI</div></div></div><div class="paper-box-text"><strong>SyncAnimation: A Real-Time End-to-End Framework for Audio-Driven Human Pose and Talking Head Animation</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Shidang Xu<sup>*</sup>, Jing Guo, Dingbin Wang, Zairan Wang, Xianfeng Tan, Xiaoli Liu<sup>†</sup></div><p>A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head pose, facial expression, and lip motion in one pipeline.</p><div class="links"><a href="projects/syncanimation.html">Details</a><a href="https://syncanimation.github.io/">Project</a><a href="https://arxiv.org/abs/2501.14646">arXiv</a></div></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/ecloudbind.png" alt="Fig. 1 E-CloudBind"><div class="badge">Accepted by Nat. Commun. (JCR Q1, IF=18.1)</div></div></div><div class="paper-box-text"><strong>An electron-density point-cloud framework for robust protein–ligand interaction prediction</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Yutong Wang<sup>*</sup>, Qingquan Wang<sup>*</sup>, Meitang Peng, Yuan Chen, Yuechuan Lin, Dongxu Shen, Xiaoli Liu, Shidang Xu<sup>&dagger;</sup>, Bin Liu</div><p>Predicts protein–ligand binding affinity from electron-density point clouds, remaining robust when atomic coordinates are noisy or come from predicted structures.</p><div class="links"><a href="projects/ecloudbind.html">Details</a><a href="https://doi.org/10.1038/s41467-026-74196-5">Paper</a></div></div></div>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/anyavatar.png" alt="Fig. 1 AnyAvatar"><div class="badge">Accepted by ACM MM</div></div></div><div class="paper-box-text"><strong>AnyAvatar: High-Fidelity Gaussian Head Avatars under Uncalibrated Camera Settings</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Dongxu Shen<sup>*</sup>, Haoran Li, Yuting Liu, Chuang Chen, Xinyi Jiang, Zhupeng Jiang, Peng Cao, Shidang Xu, Xiaoli Liu<sup>†</sup></div><p>Reconstructs animatable 3D Gaussian head avatars from uncalibrated multi-view images by jointly refining camera poses, FLAME geometry, and Gaussian appearance.</p><div class="links"><a href="projects/anyavatar.html">Details</a></div></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/anyavatar.png" alt="Fig. 1 AnyAvatar"><div class="badge">Accepted by ACM MM</div></div></div><div class="paper-box-text"><strong>AnyAvatar: High-Fidelity Gaussian Head Avatars under Uncalibrated Camera Settings</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Dongxu Shen<sup>*</sup>, Haoran Li, Yuting Liu, Chuang Chen, Xinyi Jiang, Zhupeng Jiang, Peng Cao, Shidang Xu, Xiaoli Liu<sup>&dagger;</sup></div><p>Reconstructs animatable 3D Gaussian head avatars from uncalibrated multi-view images by jointly refining camera poses, FLAME geometry, and Gaussian appearance.</p><div class="links"><a href="projects/anyavatar.html">Details</a></div></div></div>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/mogaface.png" alt="Fig. 1 MoGaFace"><div class="badge">Accepted by PRCV</div></div></div><div class="paper-box-text"><strong>MoGaFace: Momentum-Guided and Texture-Aware Gaussian Avatars for Consistent Facial Geometry</strong><div class="meta"><strong>Yujian Liu</strong>, Linlang Cao, Chuang Chen, Fanyu Geng, Dongxu Shen, Peng Cao, Shidang Xu, Xiaoli Liu</div><p>Improves 3D Gaussian head avatars by jointly correcting facial geometry and recovering texture during rendering, instead of relying on a frozen tracked mesh.</p><div class="links"><a href="projects/mogaface.html">Details</a><a href="https://arxiv.org/abs/2508.01218">arXiv</a></div></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/mpfusion.png" alt="Fig. 1 MPFusion-MIL"><div class="badge">Accepted by ACM MM</div></div></div><div class="paper-box-text"><strong>MPFusion-MIL: Morphology-Guided Fusion with Precise Cross-Scale Interaction for Whole Slide Image Analysis</strong><div class="meta"><strong>Yujian Liu</strong>, Ruoxuan Wu, Yuechuan Lin, Xinjie Shen, Yutong Wang, Haiyu Zhou, Shipu Xu, Shaoai Cai, Lingyu Liang, Shidang Xu<sup>&dagger;</sup></div><p>A multi-magnification MIL model that keeps spatial correspondence across scales and injects localized high-resolution evidence into aligned coarse regions.</p><div class="links"><a href="projects/mpfusion-mil.html">Details</a></div></div></div>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/pyrae2e.png" alt="Fig. 1 PyraE2E"><div class="badge">Accepted by ECCV</div></div></div><div class="paper-box-text"><strong>PyraE2E: Enhancing End-to-End WSI Analysis via Cross-Scale Super-Resolution</strong><div class="meta">Yuechuan Lin<sup>*</sup>, <strong>Yujian Liu</strong><sup>*</sup>, Weipeng Zhang, Yanyu Fan, Zikang Wang, Dongxu Shen, Liqin Fei, Xiaoli Liu, Shidang Xu<sup>†</sup></div><p>An end-to-end WSI framework that turns the slide resolution pyramid into cross-scale super-resolution supervision, so the encoder and aggregator can be trained together.</p><div class="links"><a href="projects/pyrae2e.html">Details</a></div></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/pyrae2e.png" alt="Fig. 1 PyraE2E"><div class="badge">Accepted by ECCV</div></div></div><div class="paper-box-text"><strong>PyraE2E: Enhancing End-to-End WSI Analysis via Cross-Scale Super-Resolution</strong><div class="meta">Yuechuan Lin<sup>*</sup>, <strong>Yujian Liu</strong><sup>*</sup>, Weipeng Zhang, Yanyu Fan, Zikang Wang, Dongxu Shen, Liqin Fei, Xiaoli Liu, Shidang Xu<sup>&dagger;</sup></div><p>An end-to-end WSI framework that turns the slide resolution pyramid into cross-scale super-resolution supervision, so the encoder and aggregator can be trained together.</p><div class="links"><a href="projects/pyrae2e.html">Details</a></div></div></div>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/mpfusion.png" alt="Fig. 1 MPFusion-MIL"><div class="badge">Accepted by ACM MM</div></div></div><div class="paper-box-text"><strong>MPFusion-MIL: Morphology-Guided Fusion with Precise Cross-Scale Interaction for Whole Slide Image Analysis</strong><div class="meta"><strong>Yujian Liu</strong>, Ruoxuan Wu, Yuechuan Lin, Xinjie Shen, Yutong Wang, Haiyu Zhou, Shipu Xu, Shaoai Cai, Lingyu Liang, Shidang Xu<sup>†</sup></div><p>A multi-magnification MIL model that keeps spatial correspondence across scales and injects localized high-resolution evidence into aligned coarse regions.</p><div class="links"><a href="projects/mpfusion-mil.html">Details</a></div></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/syncanimation.png" alt="Fig. 1 SyncAnimation"><div class="badge">Accepted by IJCAI</div></div></div><div class="paper-box-text"><strong>SyncAnimation: A Real-Time End-to-End Framework for Audio-Driven Human Pose and Talking Head Animation</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Shidang Xu<sup>*</sup>, Jing Guo, Dingbin Wang, Zairan Wang, Xianfeng Tan, Xiaoli Liu<sup>&dagger;</sup></div><p>A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head pose, facial expression, and lip motion in one pipeline.</p><div class="links"><a href="projects/syncanimation.html">Details</a><a href="https://syncanimation.github.io/">Project</a><a href="https://arxiv.org/abs/2501.14646">arXiv</a></div></div></div>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/cdsr.png" alt="Fig. 1 CDSR"><div class="badge">Accepted by PRCV</div></div></div><div class="paper-box-text"><strong>Minimal High-Resolution Patches Are Sufficient for Whole Slide Image Representation via Cascaded Dual-Scale Reconstruction</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Yuechuan Lin<sup>*</sup>, Dongxu Shen<sup>*</sup>, Haoran Li, Yutong Wang, Xiaoli Liu, Shidang Xu<sup>†</sup></div><p>Shows that a small set of informative high-resolution patches, selected and reconstructed through cascaded dual-scale learning, is sufficient for robust WSI representation.</p><div class="links"><a href="projects/cdsr.html">Details</a><a href="https://arxiv.org/abs/2508.01641">arXiv</a></div></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/cdsr.png" alt="Fig. 1 CDSR"><div class="badge">Accepted by PRCV</div></div></div><div class="paper-box-text"><strong>Minimal High-Resolution Patches Are Sufficient for Whole Slide Image Representation via Cascaded Dual-Scale Reconstruction</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Yuechuan Lin<sup>*</sup>, Dongxu Shen<sup>*</sup>, Haoran Li, Yutong Wang, Xiaoli Liu, Shidang Xu<sup>&dagger;</sup></div><p>Shows that a small set of informative high-resolution patches, selected and reconstructed through cascaded dual-scale learning, is sufficient for robust WSI representation.</p><div class="links"><a href="projects/cdsr.html">Details</a><a href="https://arxiv.org/abs/2508.01641">arXiv</a></div></div></div>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/ecloudbind.png" alt="Fig. 1 E-CloudBind"><div class="badge">Accepted by Nat. Commun.</div></div></div><div class="paper-box-text"><strong>An electron-density point-cloud framework for robust protein–ligand interaction prediction</strong><div class="meta"><strong>Yujian Liu</strong><sup>*</sup>, Yutong Wang<sup>*</sup>, Qingquan Wang<sup>*</sup>, Meitang Peng, Yuan Chen, Yuechuan Lin, Dongxu Shen, Xiaoli Liu, Shidang Xu<sup>†</sup>, Bin Liu</div><p>Predicts protein–ligand binding affinity from electron-density point clouds, remaining robust when atomic coordinates are noisy or come from predicted structures.</p><div class="links"><a href="projects/ecloudbind.html">Details</a><a href="https://doi.org/10.1038/s41467-026-74196-5">Paper</a></div></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/mogaface.png" alt="Fig. 1 MoGaFace"><div class="badge">Accepted by PRCV</div></div></div><div class="paper-box-text"><strong>MoGaFace: Momentum-Guided and Texture-Aware Gaussian Avatars for Consistent Facial Geometry</strong><div class="meta"><strong>Yujian Liu</strong>, Linlang Cao, Chuang Chen, Fanyu Geng, Dongxu Shen, Peng Cao, Shidang Xu<sup>&dagger;</sup>, Xiaoli Liu<sup>&dagger;</sup></div><p>Improves 3D Gaussian head avatars by jointly correcting facial geometry and recovering texture during rendering, instead of relying on a frozen tracked mesh.</p><div class="links"><a href="projects/mogaface.html">Details</a><a href="https://arxiv.org/abs/2508.01218">arXiv</a></div></div></div>
 
-      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/lipid.png" alt="Fig. 1 Lipid"><div class="badge">Major Revision in Nat. Commun.</div></div></div><div class="paper-box-text"><strong>Discovery of activable oncolytic ionizable lipid nanoparticles for selective cancer therapy</strong><div class="meta">Hou-Bing Zhang<sup>*</sup>, <strong>Yujian Liu</strong><sup>*</sup>, Weide Xu<sup>*</sup>, et al.</div><p>Uses machine-learning-accelerated screening to discover activable oncolytic ionizable lipid nanoparticles for selective cancer therapy.</p></div></div>
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/ml_nanoparticle.png" alt="Fig. 1 ML-Enhanced Nanoparticle Design"><div class="badge">Accepted by Advanced Science (JCR Q1, IF=14.1)</div></div></div><div class="paper-box-text"><strong>Machine Learning-Enhanced Nanoparticle Design for Precision Cancer Drug Delivery</strong><div class="meta">Qingquan Wang, <strong>Yujian Liu</strong>, Chenchen Li, Bin Xu, Shidang Xu<sup>&dagger;</sup>, Bin Liu<sup>&dagger;</sup></div><p>Reviews how machine learning can guide nanoparticle synthesis and formulation, and help model nano–bio interactions along the cancer drug-delivery pipeline, from circulation and tumor extravasation to penetration and cellular uptake.</p><div class="links"><a href="https://doi.org/10.1002/advs.202503138">Paper</a></div></div></div>
+
+      <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/lipid.png" alt="Fig. 1 Lipid"><div class="badge">Major Revision in Nat. Commun. (JCR Q1, IF=18.1)</div></div></div><div class="paper-box-text"><strong>Discovery of activable oncolytic ionizable lipid nanoparticles for selective cancer therapy</strong><div class="meta">Hou-Bing Zhang<sup>*</sup>, <strong>Yujian Liu</strong><sup>*</sup>, Weide Xu<sup>*</sup>, et al.</div><p>Uses machine-learning-accelerated screening to discover activable oncolytic ionizable lipid nanoparticles for selective cancer therapy.</p></div></div>
 
       <div class="paper-box"><div class="paper-box-image"><div><img src="images/projects/dxtalker.png" alt="Fig. 1 DXTalker"><div class="badge">Submitted to AAAI</div></div></div><div class="paper-box-text"><strong>DXTalker: Factorizing Speech-Driven 3D Facial Animation via Articulatory Prototypes and Personalized Dynamics</strong><div class="meta"><strong>Yujian Liu</strong>, Shidang Xu, Xiaoli Liu, et al.</div><p>Factorizes speech-driven 3D facial animation into shared articulatory prototypes and identity-specific dynamics for accurate lip sync and expressive motion.</p></div></div>
     </section>
 
-    <section id="vlog" class="anchor">
-      <h1>📹 Vlog</h1>
+    <section id="awards" class="anchor">
+      <h1>🏆 Awards</h1>
+      <ul>
+        <li><em>2022</em>, <strong>Honorable Mention</strong>, Mathematical Contest in Modeling/Interdisciplinary Contest in Modeling</li>
+        <li><em>2022</em>, <strong>National Second Prize</strong>, Chinese Collegiate Computing Competition</li>
+        <li><em>2022</em>, <strong>National Third Prize</strong>, China College Student Service Outsourcing Innovation and Entrepreneurship Competition</li>
+        <li><em>2022</em>, <strong>National Third Prize</strong>, National College Student Market Survey and Analysis Competition</li>
+        <li><em>2021</em>, <strong>Meritorious Winner</strong>, Mathematical Contest in Modeling/Interdisciplinary Contest in Modeling</li>
+        <li><em>2021</em>, <strong>National Second Prize</strong>, Contemporary Undergraduate Mathematical Contest in Modeling</li>
+      </ul>
     </section>
   </main>
 </div>

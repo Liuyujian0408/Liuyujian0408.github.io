@@ -7,7 +7,7 @@ a:hover { text-decoration:underline; }
 .back { display:inline-block; margin-bottom:1.25rem; }
 h1 { font-size:1.35rem; line-height:1.45; margin:0 0 .75rem; color:var(--heading); }
 .authors { margin:0 0 .35rem; }
-.venue { font-style:italic; margin:0 0 1.25rem; color:#555; }
+.note { margin:0 0 1.25rem; font-size:.9rem; color:#666; }
 .project-figure { margin:1.5em 0 1.75em; }
 .project-figure img { width:100%; box-shadow:3px 3px 6px #888; }
 .project-figure figcaption { font-size:.85rem; color:#666; text-align:center; margin-top:.45em; }

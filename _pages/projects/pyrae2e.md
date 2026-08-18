@@ -4,12 +4,13 @@ title: "PyraE2E"
 author_profile: false
 ---
 
-[← Back to Research Projects](/#-research-projects)
+[Back to Research Projects](/#-research-projects)
 
 **PyraE2E: Enhancing End-to-End WSI Analysis via Cross-Scale Super-Resolution**
 
-Yuechuan Lin<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weipeng Zhang, Yanyu Fan, Zikang Wang, Dongxu Shen, Liqin Fei, Xiaoli Liu, Shidang Xu<sup>†</sup>  
-*ECCV*
+Yuechuan Lin<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weipeng Zhang, Yanyu Fan, Zikang Wang, Dongxu Shen, Liqin Fei, Xiaoli Liu, Shidang Xu<sup>&dagger;</sup>
+
+<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.
 
 Whole-slide image (WSI) analysis often depends on encoders pretrained on natural images, which leaves a domain gap for histopathology. Fully end-to-end training is also expensive: gigapixel slides cannot be encoded densely, random sampling discards fine morphology, and slide-level labels provide only sparse supervision. PyraE2E turns the native WSI resolution pyramid into dense cross-scale supervision so that the encoder and aggregator can be trained jointly.
 

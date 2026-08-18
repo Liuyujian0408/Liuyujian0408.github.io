@@ -237,6 +237,58 @@
     white-space: nowrap;
   }
 
+  li.author__wechat {
+    white-space: normal;
+    position: relative;
+  }
+
+  .author__wechat-link {
+    position: relative;
+    display: inline-block !important;
+    cursor: default;
+  }
+
+  .author__wechat-link:hover {
+    text-decoration: none !important;
+  }
+
+  .author__wechat-tip {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 10px);
+    transform: translateX(-50%);
+    padding: 8px;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  .author__wechat-tip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border: 6px solid transparent;
+    border-top-color: #fff;
+    filter: drop-shadow(0 1px 0 $border-color);
+  }
+
+  .author__wechat-tip img {
+    display: block;
+    width: 140px;
+    height: auto;
+  }
+
+  .author__wechat-link:hover .author__wechat-tip,
+  .author__wechat-link:focus .author__wechat-tip {
+    display: block;
+  }
+
   a {
     display: block;
     margin-bottom: 5px;

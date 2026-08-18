@@ -4,12 +4,13 @@ title: "AnyAvatar"
 author_profile: false
 ---
 
-[← Back to Research Projects](/#-research-projects)
+[Back to Research Projects](/#-research-projects)
 
 **AnyAvatar: High-Fidelity Gaussian Head Avatars under Uncalibrated Camera Settings**
 
-**Yujian Liu**<sup>*</sup>, Dongxu Shen<sup>*</sup>, Haoran Li, Yuting Liu, Chuang Chen, Xinyi Jiang, Zhupeng Jiang, Peng Cao, Shidang Xu, Xiaoli Liu<sup>†</sup>  
-*ACM MM*
+**Yujian Liu**<sup>*</sup>, Dongxu Shen<sup>*</sup>, Haoran Li, Yuting Liu, Chuang Chen, Xinyi Jiang, Zhupeng Jiang, Peng Cao, Shidang Xu, Xiaoli Liu<sup>&dagger;</sup>
+
+<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.
 
 Most 3D Gaussian head avatar methods assume accurately calibrated multi-view cameras. In unconstrained capture, predicted poses are coarse, FLAME initialization becomes unstable, and residual pose error is absorbed into appearance, causing overfitting to training views. AnyAvatar removes the calibration requirement and reconstructs animatable high-fidelity Gaussian heads from unposed images.
 

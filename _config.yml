@@ -1,6 +1,6 @@
 # Site Settings
 title: "Yujian Liu"
-description: "Master's student in Biomedical Engineering at SCUT. Research on 3D Gaussian avatars, computational pathology, and AI for drug discovery."
+description: "Research Assistant in SCUT. Research on 3D Gaussian avatars, computational pathology, and AI for drug discovery."
 repository: "Liuyujian0408/Liuyujian0408.github.io"
 google_scholar_stats_use_cdn: false
 
@@ -32,6 +32,7 @@ author:
   facebook:
   foursquare:
   github: "Liuyujian0408"
+  wechat_qr: "images/wechat-qr.jpg"
   google_plus:
   keybase:
   instagram:
