@@ -264,3 +264,157 @@ body.layout-project .sidebar {
 .project-detail__content sup {
     font-size: 0.75em;
 }
+
+/* Right-side project details drawer (~half page) */
+.project-drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 17, 17, 0.28);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+html.project-drawer-open .project-drawer-overlay {
+    opacity: 1;
+}
+
+.project-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: min(50vw, 720px);
+    max-width: 100%;
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: transform 0.28s ease;
+    pointer-events: none;
+}
+
+.project-drawer.is-open {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.project-drawer__panel {
+    height: 100%;
+    background: #fff;
+    box-shadow: -8px 0 28px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project-drawer__header {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.85rem 1.25rem;
+    border-bottom: 1px solid #efefef;
+    background: #fff;
+}
+
+.project-drawer__back {
+    border: 0;
+    background: transparent;
+    color: #52adc8;
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 0.25rem 0;
+}
+
+.project-drawer__back:hover {
+    text-decoration: underline;
+}
+
+.project-drawer__body {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 1.25rem 1.5rem 2.5rem;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #494e52;
+}
+
+.project-drawer__body h1 {
+    font-size: 1.35rem !important;
+    line-height: 1.45 !important;
+    margin: 0 0 0.75rem !important;
+    padding: 0 !important;
+    border: 0 !important;
+    color: #111;
+}
+
+.project-drawer__body .authors {
+    margin: 0 0 0.35rem;
+}
+
+.project-drawer__body .note {
+    margin: 0 0 1.25rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.project-drawer__body .project-figure {
+    margin: 1.5em 0 1.75em;
+}
+
+.project-drawer__body .project-figure img {
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 6px #888;
+}
+
+.project-drawer__body .project-figure figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.45em;
+}
+
+.project-drawer__loading {
+    color: #888;
+}
+
+.project-drawer__edge {
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 64px;
+    border: 1px solid #efefef;
+    border-right: 0;
+    border-radius: 8px 0 0 8px;
+    background: #fff;
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.06);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.project-drawer.is-open .project-drawer__edge {
+    display: flex;
+}
+
+.project-drawer__edge:hover {
+    color: #111;
+    background: #f7f7f7;
+}
+
+@media (max-width: 800px) {
+    .project-drawer {
+        width: min(92vw, 560px);
+    }
+}
+
+html.project-drawer-open {
+    overflow: hidden;
+}

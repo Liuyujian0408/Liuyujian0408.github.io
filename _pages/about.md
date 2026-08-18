@@ -57,7 +57,7 @@ I am currently applying to **PhD programs for Spring/Fall 2027** admission. Pros
 
 Predicts protein–ligand binding affinity from electron-density point clouds, remaining robust when atomic coordinates are noisy or come from predicted structures.
 
-[[Details]](/projects/ecloudbind/) [[Paper]](https://doi.org/10.1038/s41467-026-74196-5)
+<a class="js-project-detail" href="/projects/ecloudbind/" data-detail-url="/projects/ecloudbind/">Details</a> [[Paper]](https://doi.org/10.1038/s41467-026-74196-5)
 
 </div>
 </div>
@@ -71,8 +71,7 @@ Predicts protein–ligand binding affinity from electron-density point clouds, r
 
 Reconstructs animatable 3D Gaussian head avatars from uncalibrated multi-view images by jointly refining camera poses, FLAME geometry, and Gaussian appearance.
 
-[[Details]](/projects/anyavatar/)
-
+<a class="js-project-detail" href="/projects/anyavatar/" data-detail-url="/projects/anyavatar/">Details</a>
 </div>
 </div>
 
@@ -85,8 +84,7 @@ Reconstructs animatable 3D Gaussian head avatars from uncalibrated multi-view im
 
 A multi-magnification MIL model that keeps spatial correspondence across scales and injects localized high-resolution evidence into aligned coarse regions.
 
-[[Details]](/projects/mpfusion-mil/)
-
+<a class="js-project-detail" href="/projects/mpfusion-mil/" data-detail-url="/projects/mpfusion-mil/">Details</a>
 </div>
 </div>
 
@@ -99,8 +97,7 @@ Yuechuan Lin<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weipeng Zhang, Yanyu Fan, 
 
 An end-to-end WSI framework that turns the slide resolution pyramid into cross-scale super-resolution supervision, so the encoder and aggregator can be trained together.
 
-[[Details]](/projects/pyrae2e/)
-
+<a class="js-project-detail" href="/projects/pyrae2e/" data-detail-url="/projects/pyrae2e/">Details</a>
 </div>
 </div>
 
@@ -113,7 +110,7 @@ An end-to-end WSI framework that turns the slide resolution pyramid into cross-s
 
 A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head pose, facial expression, and lip motion in one pipeline.
 
-[[Details]](/projects/syncanimation/) [[Project]](https://syncanimation.github.io/) [[arXiv]](https://arxiv.org/abs/2501.14646)
+<a class="js-project-detail" href="/projects/syncanimation/" data-detail-url="/projects/syncanimation/">Details</a> [[Project]](https://syncanimation.github.io/) [[arXiv]](https://arxiv.org/abs/2501.14646)
 
 </div>
 </div>
@@ -127,7 +124,7 @@ A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head
 
 Shows that a small set of informative high-resolution patches, selected and reconstructed through cascaded dual-scale learning, is sufficient for robust WSI representation.
 
-[[Details]](/projects/cdsr/) [[arXiv]](https://arxiv.org/abs/2508.01641)
+<a class="js-project-detail" href="/projects/cdsr/" data-detail-url="/projects/cdsr/">Details</a> [[arXiv]](https://arxiv.org/abs/2508.01641)
 
 </div>
 </div>
@@ -141,7 +138,7 @@ Shows that a small set of informative high-resolution patches, selected and reco
 
 Improves 3D Gaussian head avatars by jointly correcting facial geometry and recovering texture during rendering, instead of relying on a frozen tracked mesh.
 
-[[Details]](/projects/mogaface/) [[arXiv]](https://arxiv.org/abs/2508.01218)
+<a class="js-project-detail" href="/projects/mogaface/" data-detail-url="/projects/mogaface/">Details</a> [[arXiv]](https://arxiv.org/abs/2508.01218)
 
 </div>
 </div>
