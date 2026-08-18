@@ -3,7 +3,6 @@
   var drawer = document.getElementById("project-drawer");
   var body = document.getElementById("project-drawer-body");
   var backBtn = document.getElementById("project-drawer-back");
-  var closeBtn = document.getElementById("project-drawer-close");
   var edgeBtn = document.getElementById("project-drawer-edge");
   if (!overlay || !drawer || !body) return;
 
@@ -100,7 +99,6 @@
 
   overlay.addEventListener("click", closeDrawer);
   if (backBtn) backBtn.addEventListener("click", closeDrawer);
-  if (closeBtn) closeBtn.addEventListener("click", closeDrawer);
   if (edgeBtn) edgeBtn.addEventListener("click", closeDrawer);
 
   document.addEventListener("keydown", function (e) {

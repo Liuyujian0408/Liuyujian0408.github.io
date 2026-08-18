@@ -377,26 +377,6 @@ html.project-drawer-open .project-drawer-overlay {
     text-decoration: underline;
 }
 
-.project-drawer__close {
-    border: 0;
-    background: transparent;
-    color: #222;
-    font-size: 1.55rem;
-    line-height: 1;
-    width: 1.6rem;
-    height: 1.6rem;
-    cursor: pointer;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 auto;
-}
-
-.project-drawer__close:hover {
-    color: #000;
-}
-
 .project-drawer__loading {
     color: #888;
 }
