@@ -8,14 +8,25 @@ author_profile: false
 
 **PyraE2E: Enhancing End-to-End WSI Analysis via Cross-Scale Super-Resolution**
 
-Yuechuan Lin<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weipeng Zhang, Yanyu Fan, Zikang Wang, Dongxu Shen, Liqin Fei, Xiaoli Liu, Shidang Xu<sup>†</sup>  
-*ECCV*
+Yuechuan Lin*, `Yujian Liu`*, Weipeng Zhang, Yanyu Fan, Zikang Wang, Dongxu Shen, Liqin Fei, Xiaoli Liu, Shidang Xu† · *ECCV*
 
-Whole-slide image (WSI) analysis often depends on encoders pretrained on natural images, which leaves a domain gap for histopathology. Fully end-to-end training is also expensive: gigapixel slides cannot be encoded densely, random sampling discards fine morphology, and slide-level labels provide only sparse supervision. PyraE2E turns the native WSI resolution pyramid into dense cross-scale supervision so that the encoder and aggregator can be trained jointly.
+### Key Challenges
 
-<figure class="project-figure">
-<img src="/images/projects/pyrae2e_framework.png" alt="Fig. 2 PyraE2E framework" width="100%">
-<figcaption>Fig. 2. Overview of the PyraE2E framework.</figcaption>
-</figure>
+- Pretrained natural-image encoders create a domain gap for histopathology whole slide image (WSI) analysis.
+- End-to-end WSI training is expensive because high-resolution patch modeling and random sampling discard fine morphology.
+- Slide-level labels alone provide sparse supervision for encoder learning.
 
-As shown in Fig. 2, Cluster-Score Sampling first selects informative low-resolution (LR) patches at low magnification. Spatially aligned high-resolution (HR) patches at higher magnification serve as reconstruction targets. A shared Global–Local Partitioned encoder processes the LR patches with HR-informed features, while an SR reconstruction head and a slide-level prediction head are optimized together under a bounded computational budget. The super-resolution task supplies dense morphological supervision that slide-level labels alone cannot provide.
+### Solution
+
+PyraE2E turns the WSI resolution pyramid into dense cross-scale super-resolution supervision, enabling efficient end-to-end joint encoder–aggregator training.
+
+### Framework
+
+<img src='/images/projects/pyrae2e_framework.png' alt="PyraE2E framework" width="100%">
+
+### Pipeline
+
+- Sample informative low-resolution (LR) patches at low magnification using the embedded Cluster-Score Sampling module.
+- Retrieve spatially aligned high-resolution (HR) patches at higher magnification as reconstruction targets.
+- Encode LR patches with a shared Global–Local Partitioned (GLP) encoder informed by HR features.
+- Jointly optimize an SR reconstruction head and a slide-level prediction head under bounded computation.

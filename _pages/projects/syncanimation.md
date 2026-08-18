@@ -8,16 +8,27 @@ author_profile: false
 
 **SyncAnimation: A Real-Time End-to-End Framework for Audio-Driven Human Pose and Talking Head Animation**
 
-**Yujian Liu**<sup>*</sup>, Shidang Xu<sup>*</sup>, Jing Guo, Dingbin Wang, Zairan Wang, Xianfeng Tan, Xiaoli Liu<sup>†</sup>  
-*IJCAI*
+`Yujian Liu`*, Shidang Xu*, Jing Guo, Dingbin Wang, Zairan Wang, Xianfeng Tan, Xiaoli Liu† · *IJCAI*
 
-Audio-driven talking avatars often optimize lip motion, facial expression, and upper-body pose as separate tasks. The resulting animation becomes inconsistent during silence, and the stacked modules are usually too heavy for real-time use. SyncAnimation addresses both issues with a real-time NeRF pipeline that generates audio-synchronized pose, expression, and lip motion together.
+### Key Challenges
 
-<figure class="project-figure">
-<img src="/images/projects/syncanimation_framework.png" alt="Fig. 2 SyncAnimation framework" width="100%">
-<figcaption>Fig. 2. Overview of the SyncAnimation framework.</figcaption>
-</figure>
+- Existing audio-driven avatar methods are computationally heavy and struggle to meet real-time deployment requirements.
+- Lip motion, facial expression, and upper-body pose are often optimized separately, causing inconsistency during silent intervals.
+- High-fidelity talking-head generation with synchronized head pose and body motion remains difficult for NeRF-based systems.
 
-As shown in Fig. 2, an AudioPose Syncer encodes the input speech and predicts head pose together with upper-body motion. An AudioEmotion Syncer then produces expression dynamics that stay coherent in both speaking and silent intervals. These signals are fed into a unified generation process that progressively synthesizes the head, upper body, and lip shapes, and a High-Synchronization Human Renderer composes the final avatar so that the head and body remain temporally aligned.
+### Solution
+
+SyncAnimation jointly models audio-to-pose and audio-to-expression synchronization in a real-time NeRF-based pipeline for coherent full upper-body talking avatars.
+
+### Framework
+
+<img src='/images/projects/syncanimation_framework.png' alt="SyncAnimation framework" width="100%">
+
+### Pipeline
+
+- Encode input audio and predict synchronized head pose and upper-body motion with the AudioPose Syncer.
+- Generate emotionally consistent facial expressions with the AudioEmotion Syncer, especially during speech and silence.
+- Progressively synthesize audio-aligned head, upper-body, and lip shapes in a unified generation process.
+- Render the final avatar with the High-Synchronization Human Renderer for seamless head–body integration.
 
 [[Project]](https://syncanimation.github.io/) [[arXiv]](https://arxiv.org/abs/2501.14646)

@@ -52,7 +52,6 @@
 
     .paper-box-image{
         justify-content: center;
-        align-items: center;
         display: flex;
         width: 100%;
         order: 2;
@@ -61,33 +60,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             width: 100%;
         }
 
         img {
-            width: 100%;
-            max-width: 380px;
-            height: 220px;
+            max-width: 400px;
             box-shadow: 3px 3px 6px #888;
-            object-fit: contain;
-            background: transparent;
+            object-fit: cover;
         }
     }
     
     .paper-box-text{
         max-width: 100%;
         order: 1;
-
-        p {
-            margin-bottom: 0.6em;
-        }
     }
     
     @include breakpoint($medium) {
         .paper-box-image{
-            justify-content: center;
-            align-items: center;
+            justify-content: left;
             min-width: 200px;
             max-width: 40%;
             order: 1;
@@ -103,24 +93,6 @@
     }
 
 
-}
-
-.fig-caption,
-.project-figure figcaption {
-    font-size: 0.85em;
-    color: #666;
-    text-align: center;
-    margin-top: 0.45em;
-    line-height: 1.4;
-}
-
-.project-figure {
-    margin: 1.5em 0 1.75em;
-
-    img {
-        width: 100%;
-        box-shadow: 3px 3px 6px #888;
-    }
 }
 
 $scroll_offset : 2em;
