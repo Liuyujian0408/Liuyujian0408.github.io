@@ -59,6 +59,8 @@ include:
   - files
 exclude:
   - docs
+  - preview.html
+  - projects
   - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"

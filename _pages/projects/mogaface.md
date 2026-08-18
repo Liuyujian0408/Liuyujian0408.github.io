@@ -8,27 +8,16 @@ author_profile: false
 
 **MoGaFace: Momentum-Guided and Texture-Aware Gaussian Avatars for Consistent Facial Geometry**
 
-`Yujian Liu`, Linlang Cao, Chuang Chen, Fanyu Geng, Dongxu Shen, Peng Cao, Shidang Xu, Xiaoli Liu · *PRCV*
+**Yujian Liu**, Linlang Cao, Chuang Chen, Fanyu Geng, Dongxu Shen, Peng Cao, Shidang Xu, Xiaoli Liu  
+*PRCV*
 
-### Key Challenges
+Two-stage Gaussian avatar pipelines start from a tracked FLAME mesh and then freeze that geometry while optimizing appearance. Geometric misalignment therefore suppresses fine facial detail, expression changes are hard to keep consistent across views, and texture becomes over-smoothed. MoGaFace instead refines geometry and texture together during Gaussian rendering.
 
-- Two-stage avatar pipelines depend on tracked FLAME meshes, and geometric misalignment suppresses fine facial details.
-- Expression changes across views are difficult to keep geometrically consistent during Gaussian rendering.
-- Texture details are often blurred when geometry and appearance are optimized separately.
+<figure class="project-figure">
+<img src="/images/projects/mogaface_framework.png" alt="Fig. 2 MoGaFace framework" width="100%">
+<figcaption>Fig. 2. Overview of the MoGaFace framework.</figcaption>
+</figure>
 
-### Solution
-
-MoGaFace jointly refines facial geometry and texture during Gaussian rendering through momentum-guided geometry correction and latent-guided texture attention.
-
-### Framework
-
-<img src='/images/projects/mogaface_framework.png' alt="MoGaFace framework" width="100%">
-
-### Pipeline
-
-- Initialize a 3D Gaussian head avatar from multi-view images and tracked FLAME geometry.
-- Correct geometry–image misalignment with Momentum-Guided Consistent Geometry using a momentum-updated expression bank.
-- Encode compact multi-view cues into head-aware latent representations via Latent-Guided Texture Attention.
-- Integrate refined geometry and texture into Gaussian attributes for high-fidelity novel-view synthesis and reenactment.
+Fig. 2 illustrates the two coupled modules. Momentum-Guided Consistent Geometry maintains an expression bank with momentum updates to correct mesh–image misalignment as expressions change. Latent-Guided Texture Attention compresses multi-view appearance cues into a head-aware latent code and restores high-frequency texture. The refined geometry and texture are written back into Gaussian attributes, yielding more consistent novel-view synthesis and reenactment.
 
 [[arXiv]](https://arxiv.org/abs/2508.01218)

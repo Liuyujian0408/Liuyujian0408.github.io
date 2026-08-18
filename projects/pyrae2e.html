@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyraE2E — Yujian Liu</title>
+  <link rel="stylesheet" href="preview-project.css">
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../preview.html#research-projects">← Back to Research Projects</a>
+    <h1>PyraE2E: Enhancing End-to-End WSI Analysis via Cross-Scale Super-Resolution</h1>
+    <p class="authors">Yuechuan Lin<sup>*</sup>, <strong>Yujian Liu</strong><sup>*</sup>, Weipeng Zhang, Yanyu Fan, Zikang Wang, Dongxu Shen, Liqin Fei, Xiaoli Liu, Shidang Xu<sup>†</sup></p>
+    <p class="venue">ECCV</p>
+    <p>Whole-slide image (WSI) analysis often depends on encoders pretrained on natural images, which leaves a domain gap for histopathology. Fully end-to-end training is also expensive: gigapixel slides cannot be encoded densely, random sampling discards fine morphology, and slide-level labels provide only sparse supervision. PyraE2E turns the native WSI resolution pyramid into dense cross-scale supervision so that the encoder and aggregator can be trained jointly.</p>
+    <figure class="project-figure">
+      <img src="../images/projects/pyrae2e_framework.png" alt="Fig. 2 PyraE2E framework">
+      <figcaption>Fig. 2. Overview of the PyraE2E framework.</figcaption>
+    </figure>
+    <p>As shown in Fig. 2, Cluster-Score Sampling first selects informative low-resolution (LR) patches at low magnification. Spatially aligned high-resolution (HR) patches at higher magnification serve as reconstruction targets. A shared Global–Local Partitioned encoder processes the LR patches with HR-informed features, while an SR reconstruction head and a slide-level prediction head are optimized together under a bounded computational budget. The super-resolution task supplies dense morphological supervision that slide-level labels alone cannot provide.</p>
+  </div>
+</body>
+</html>
