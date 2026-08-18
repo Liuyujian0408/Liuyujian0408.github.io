@@ -72,12 +72,12 @@
       {% endif %}
       {% if author.wechat_qr %}
         <li class="author__wechat">
-          <a href="javascript:void(0)" class="author__wechat-link" title="WeChat" role="button" aria-label="WeChat QR code">
+          <span class="author__wechat-link" title="WeChat" tabindex="0" role="button" aria-label="WeChat QR code">
             <i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat
             <span class="author__wechat-tip" aria-hidden="true">
-              <img src="{{ author.wechat_qr }}" alt="WeChat QR code">
+              <img src="{{ author.wechat_qr }}" alt="WeChat QR code" width="140" height="185">
             </span>
-          </a>
+          </span>
         </li>
       {% endif %}
       {% if author.stackoverflow %}

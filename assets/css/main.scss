@@ -143,3 +143,44 @@ h1:before, .anchor:before {
     line-height: 1.35;
     text-align: center;
 }
+
+/* WeChat: hide QR by default; show above label on hover */
+.author__urls .author__wechat {
+    position: relative;
+    white-space: normal;
+}
+
+.author__urls .author__wechat-link {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    color: inherit;
+    font-size: inherit;
+}
+
+.author__urls .author__wechat-tip {
+    display: none !important;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 10px);
+    z-index: 100;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+
+.author__urls .author__wechat-tip img {
+    display: block;
+    width: 140px;
+    height: auto;
+    max-width: none;
+}
+
+.author__urls .author__wechat-link:hover .author__wechat-tip,
+.author__urls .author__wechat-link:focus .author__wechat-tip,
+.author__urls .author__wechat-link:focus-within .author__wechat-tip {
+    display: block !important;
+}
