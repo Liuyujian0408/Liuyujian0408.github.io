@@ -8,15 +8,7 @@
   if (!overlay || !drawer || !body) return;
 
   var cache = {};
-  var avatarSrc =
-    drawer.getAttribute("data-avatar") || "/images/android-chrome-512x512.png";
-  var loadingHtml =
-    '<div class="project-drawer__loading">' +
-    '<img class="project-drawer__loading-avatar" src="' +
-    avatarSrc +
-    '" alt="">' +
-    "<span>Loading...</span>" +
-    "</div>";
+  var loadingHtml = '<p class="project-drawer__loading">Loading...</p>';
 
   function openDrawer() {
     overlay.hidden = false;

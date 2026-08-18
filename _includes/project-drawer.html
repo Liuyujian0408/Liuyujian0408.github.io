@@ -1,24 +1,15 @@
 <div class="project-drawer-overlay" id="project-drawer-overlay" hidden></div>
-<aside class="project-drawer" id="project-drawer" aria-hidden="true" aria-label="Project details" data-avatar="{{ '/images/android-chrome-512x512.png' | relative_url }}">
+<aside class="project-drawer" id="project-drawer" aria-hidden="true" aria-label="Project details">
   <button type="button" class="project-drawer__edge" id="project-drawer-edge" aria-label="Collapse details" title="Collapse">
     <span aria-hidden="true">&#8250;</span>
   </button>
   <div class="project-drawer__panel">
     <div class="project-drawer__header">
-      <div class="project-drawer__brand">
-        <img class="project-drawer__avatar" src="{{ '/images/android-chrome-512x512.png' | relative_url }}" alt="Yujian Liu">
-        <span class="project-drawer__initial" aria-hidden="true">Y</span>
-      </div>
-      <div class="project-drawer__actions">
-        <button type="button" class="project-drawer__back" id="project-drawer-back">Back to Research Projects</button>
-        <button type="button" class="project-drawer__close" id="project-drawer-close" aria-label="Close" title="Close">&times;</button>
-      </div>
+      <button type="button" class="project-drawer__back" id="project-drawer-back">← Back to Research Projects</button>
+      <button type="button" class="project-drawer__close" id="project-drawer-close" aria-label="Close" title="Close">&times;</button>
     </div>
     <div class="project-drawer__body" id="project-drawer-body">
-      <div class="project-drawer__loading">
-        <img class="project-drawer__loading-avatar" src="{{ '/images/android-chrome-512x512.png' | relative_url }}" alt="">
-        <span>Loading...</span>
-      </div>
+      <p class="project-drawer__loading">Loading...</p>
     </div>
   </div>
 </aside>

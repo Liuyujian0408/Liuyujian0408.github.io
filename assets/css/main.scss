@@ -83,19 +83,22 @@
             margin-bottom: 0.6em;
         }
 
+        /* Details / Paper / Project / arXiv action chips */
         a {
-            display: inline-block;
-            margin: 0.15rem 0.45rem 0.15rem 0;
-            padding: 0.15rem 0.5rem;
-            border: 1px solid $link-color;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            line-height: 1.35;
-            text-decoration: none;
+            display: inline-block !important;
+            margin: 0.2rem 0.55rem 0.2rem 0 !important;
+            padding: 0.18rem 0.55rem !important;
+            border: 1px solid $link-color !important;
+            border-radius: 4px !important;
+            font-size: 0.85rem !important;
+            line-height: 1.35 !important;
+            text-decoration: none !important;
+            vertical-align: middle;
+            box-sizing: border-box;
         }
 
         a:hover {
-            text-decoration: none;
+            text-decoration: none !important;
             background: rgba($link-color, 0.08);
         }
     }
@@ -334,41 +337,9 @@ html.project-drawer-open .project-drawer-overlay {
     justify-content: space-between;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.7rem 1rem 0.7rem 1.1rem;
+    padding: 0.75rem 1.1rem;
     border-bottom: 1px solid #efefef;
-    background: #f7f4f1;
-    border-radius: 0;
-}
-
-.project-drawer__brand {
-    display: flex;
-    align-items: center;
-    gap: 0.55rem;
-    min-width: 0;
-}
-
-.project-drawer__avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex: 0 0 auto;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
-}
-
-.project-drawer__initial {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #111;
-    line-height: 1;
-}
-
-.project-drawer__actions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0.65rem;
-    margin-left: auto;
+    background: #fff;
 }
 
 .project-drawer__back {
@@ -379,6 +350,8 @@ html.project-drawer-open .project-drawer-overlay {
     cursor: pointer;
     padding: 0.25rem 0;
     white-space: nowrap;
+    margin-right: auto;
+    text-align: left;
 }
 
 .project-drawer__back:hover {
@@ -398,6 +371,7 @@ html.project-drawer-open .project-drawer-overlay {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex: 0 0 auto;
 }
 
 .project-drawer__close:hover {
@@ -406,16 +380,6 @@ html.project-drawer-open .project-drawer-overlay {
 
 .project-drawer__loading {
     color: #888;
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-}
-
-.project-drawer__loading-avatar {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 
