@@ -124,6 +124,25 @@
 
 }
 
+/* Force visible chips for Details / Paper / Project / arXiv */
+.page__content .paper-box .paper-box-text a {
+    display: inline-block !important;
+    margin: 0.2rem 0.55rem 0.2rem 0 !important;
+    padding: 0.18rem 0.55rem !important;
+    border: 1px solid $link-color !important;
+    border-radius: 4px !important;
+    font-size: 0.85rem !important;
+    line-height: 1.35 !important;
+    text-decoration: none !important;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.page__content .paper-box .paper-box-text a:hover {
+    text-decoration: none !important;
+    background: rgba($link-color, 0.08);
+}
+
 .fig-caption,
 .project-figure figcaption {
     font-size: 0.85em;
