@@ -184,3 +184,83 @@ h1:before, .anchor:before {
 .author__urls .author__wechat-link:focus-within .author__wechat-tip {
     display: block !important;
 }
+
+/* Project detail pages — match local preview.html style */
+body.layout-project #main.project-detail-main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body.layout-project .sidebar {
+    display: none !important;
+}
+
+.project-detail {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+.project-detail__content {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #494e52;
+}
+
+.project-detail__content > p,
+.project-detail__content > ul,
+.project-detail__content > ol {
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 0.75rem 0;
+}
+
+.project-detail__content a.back {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    font-size: 16px;
+}
+
+.project-detail__content h1 {
+    font-size: 1.35rem !important;
+    line-height: 1.45 !important;
+    margin: 0 0 0.75rem !important;
+    padding: 0 !important;
+    border: 0 !important;
+    color: #111;
+    font-weight: 700;
+}
+
+.project-detail__content .authors {
+    margin: 0 0 0.35rem;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.project-detail__content .note {
+    margin: 0 0 1.25rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.project-detail__content .project-figure {
+    margin: 1.5em 0 1.75em;
+}
+
+.project-detail__content .project-figure img {
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 6px #888;
+}
+
+.project-detail__content .project-figure figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.45em;
+}
+
+.project-detail__content sup {
+    font-size: 0.75em;
+}

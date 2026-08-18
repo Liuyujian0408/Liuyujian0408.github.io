@@ -1,0 +1,33 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body class="layout-project">
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <div id="main" role="main" class="project-detail-main">
+      <article class="project-detail" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <section class="project-detail__content" itemprop="text">
+          {{ content }}
+        </section>
+      </article>
+    </div>
+
+    {% include scripts.html %}
+
+    <div class="footer_site">
+      <hr/>
+      <div class="footer_copyright">
+        © 2022 华中大 · 唐健 | 基于&nbsp;
+        <a class="page_a" href="https://github.com/RayeRen/acad-homepage.github.io">acad</a>&nbsp;模板
+      </div>
+    </div>
+  </body>
+</html>
