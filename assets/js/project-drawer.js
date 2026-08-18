@@ -106,4 +106,50 @@
       closeDrawer();
     }
   });
+
+  function stripInjectedLinkIcons() {
+    document.querySelectorAll(".paper-box-text a").forEach(function (a) {
+      a.querySelectorAll("img, svg").forEach(function (el) {
+        el.remove();
+      });
+
+      var node = a.nextSibling;
+      while (node) {
+        var next = node.nextSibling;
+        if (node.nodeType === 3) {
+          if (!String(node.textContent || "").trim()) {
+            node = next;
+            continue;
+          }
+          break;
+        }
+        if (node.nodeType !== 1) break;
+
+        var tag = node.tagName.toLowerCase();
+        var onlyIcon =
+          tag === "img" ||
+          tag === "svg" ||
+          ((tag === "span" || tag === "div" || tag === "a") &&
+            node.querySelector("img, svg") &&
+            !String(node.textContent || "").trim());
+
+        if (!onlyIcon) break;
+        node.parentNode.removeChild(node);
+        node = next;
+      }
+    });
+  }
+
+  stripInjectedLinkIcons();
+  setTimeout(stripInjectedLinkIcons, 500);
+  setTimeout(stripInjectedLinkIcons, 1500);
+  if (typeof MutationObserver !== "undefined") {
+    var mo = new MutationObserver(function () {
+      stripInjectedLinkIcons();
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () {
+      mo.disconnect();
+    }, 4000);
+  }
 })();

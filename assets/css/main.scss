@@ -143,6 +143,38 @@
     background: rgba($link-color, 0.08);
 }
 
+/* Hide browser-extension icons injected beside Paper / Details / etc. */
+.page__content .paper-box .paper-box-text a img,
+.page__content .paper-box .paper-box-text a svg,
+.page__content .paper-box .paper-box-text a::before,
+.page__content .paper-box .paper-box-text a::after,
+.page__content .paper-box .paper-box-text a + img,
+.page__content .paper-box .paper-box-text a + svg,
+.page__content .paper-box .paper-box-text a + span,
+.page__content .paper-box .paper-box-text a + div,
+.page__content .paper-box .paper-box-text p > img,
+.page__content .paper-box .paper-box-text p > svg,
+.page__content .paper-box .paper-box-text [class*="libkey"],
+.page__content .paper-box .paper-box-text [class*="unpaywall"],
+.page__content .paper-box .paper-box-text [class*="kopernio"],
+.page__content .paper-box .paper-box-text [class*="endnote"],
+.page__content .paper-box .paper-box-text [class*="zotero"],
+.page__content .paper-box .paper-box-text [class*="scite"],
+.page__content .paper-box .paper-box-text [id*="libkey"],
+.page__content .paper-box .paper-box-text [id*="unpaywall"] {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    content: none !important;
+    background: none !important;
+}
+
 .fig-caption,
 .project-figure figcaption {
     font-size: 0.85em;
