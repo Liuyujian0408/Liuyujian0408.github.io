@@ -24,7 +24,7 @@ My research interests include:
 - **Whole slide image (WSI)** analysis and computational pathology
 - **AI for drug discovery**, including protein–ligand interaction prediction and molecular generation
 
-I am currently applying to **PhD programs for Spring/Fall 2027** admission. Prospective advisors and collaborators are welcome to reach out via [email](mailto:liuyujian0408@gmail.com).
+I am currently applying to **PhD programs for Spring/Fall 2027** admission. Prospective advisors and collaborators are welcome to reach out.
 
 <span class='anchor' id='-education'></span>
 
