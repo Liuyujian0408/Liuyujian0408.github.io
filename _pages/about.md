@@ -71,7 +71,7 @@ Predicts protein–ligand binding affinity from electron-density point clouds, r
 
 Reconstructs animatable 3D Gaussian head avatars from uncalibrated multi-view images by jointly refining camera poses, FLAME geometry, and Gaussian appearance.
 
-<a class="js-project-detail" href="/projects/anyavatar/" data-detail-url="/projects/anyavatar/">Details</a> [Project](https://aishiweilai.github.io/AnyAvatar.github.io/)
+<a class="js-project-detail" href="/projects/anyavatar/" data-detail-url="/projects/anyavatar/">Details</a> [Project](https://aishiweilai.github.io/AnyAvatar.github.io/) [Code](https://github.com/AISHIWEILAI/AnyAvatar)
 </div>
 </div>
 
