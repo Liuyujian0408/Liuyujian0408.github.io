@@ -124,7 +124,7 @@ A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head
 
 Shows that a small set of informative high-resolution patches, selected and reconstructed through cascaded dual-scale learning, is sufficient for robust WSI representation.
 
-<a class="js-project-detail" href="/projects/cdsr/" data-detail-url="/projects/cdsr/">Details</a> [arXiv](https://arxiv.org/abs/2508.01641)
+<a class="js-project-detail" href="/projects/cdsr/" data-detail-url="/projects/cdsr/">Details</a> <a class="js-project-pdf" href="/files/CDSR_Poster.pdf" data-pdf-url="/files/CDSR_Poster.pdf">Poster</a> [arXiv](https://arxiv.org/abs/2508.01641)
 
 </div>
 </div>
@@ -138,7 +138,7 @@ Shows that a small set of informative high-resolution patches, selected and reco
 
 Improves 3D Gaussian head avatars by jointly correcting facial geometry and recovering texture during rendering, instead of relying on a frozen tracked mesh.
 
-<a class="js-project-detail" href="/projects/mogaface/" data-detail-url="/projects/mogaface/">Details</a> [Project](https://mogaface.github.io/) [arXiv](https://arxiv.org/abs/2508.01218)
+<a class="js-project-detail" href="/projects/mogaface/" data-detail-url="/projects/mogaface/">Details</a> <a class="js-project-pdf" href="/files/MoGaFace_Poster.pdf" data-pdf-url="/files/MoGaFace_Poster.pdf">Poster</a> [Project](https://mogaface.github.io/) [arXiv](https://arxiv.org/abs/2508.01218)
 
 </div>
 </div>
