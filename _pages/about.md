@@ -57,7 +57,7 @@ I am currently applying to **PhD programs for Spring/Fall 2027** admission. Pros
 
 Predicts protein–ligand binding affinity from electron-density point clouds, remaining robust when atomic coordinates are noisy or come from predicted structures.
 
-<a class="js-project-detail" href="/projects/ecloudbind/" data-detail-url="/projects/ecloudbind/">Details</a> [Paper](https://doi.org/10.1038/s41467-026-74196-5)
+<a class="js-project-detail" href="/projects/ecloudbind/" data-detail-url="/projects/ecloudbind/">Details</a> [Paper](https://doi.org/10.1038/s41467-026-74196-5) [Code](https://github.com/Liuyujian0408/DPI)
 
 </div>
 </div>
