@@ -110,7 +110,7 @@ An end-to-end WSI framework that turns the slide resolution pyramid into cross-s
 
 A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head pose, facial expression, and lip motion in one pipeline.
 
-<a class="js-project-detail" href="/projects/syncanimation/" data-detail-url="/projects/syncanimation/">Details</a> [Project](https://aishiweilai.github.io/syncanimation.github.io/) [arXiv](https://arxiv.org/abs/2501.14646)
+<a class="js-project-detail" href="/projects/syncanimation/" data-detail-url="/projects/syncanimation/">Details</a> <a class="js-project-pdf" href="/files/SyncAnimation_Poster.pdf" data-pdf-url="/files/SyncAnimation_Poster.pdf">PPT</a> [Project](https://aishiweilai.github.io/syncanimation.github.io/) [arXiv](https://arxiv.org/abs/2501.14646)
 
 </div>
 </div>

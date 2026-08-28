@@ -49,7 +49,21 @@
     return clone.innerHTML;
   }
 
+  function loadPdf(url, title) {
+    body.classList.add("project-drawer__body--pdf");
+    body.innerHTML =
+      '<div class="project-drawer__pdf">' +
+      '<iframe src="' +
+      url +
+      '#view=FitH" title="' +
+      (title || "PDF") +
+      '"></iframe>' +
+      "</div>";
+    openDrawer();
+  }
+
   function loadDetail(url) {
+    body.classList.remove("project-drawer__body--pdf");
     body.innerHTML = loadingHtml;
     openDrawer();
 
@@ -84,7 +98,29 @@
     return el.closest("a.js-project-detail");
   }
 
+  function findPdfLink(target) {
+    var el = target;
+    if (!el) return null;
+    if (el.nodeType !== 1) el = el.parentElement;
+    if (!el || typeof el.closest !== "function") return null;
+    return el.closest("a.js-project-pdf");
+  }
+
   document.addEventListener("click", function (e) {
+    var pdfLink = findPdfLink(e.target);
+    if (pdfLink) {
+      if (e.defaultPrevented) return;
+      if (e.button !== 0) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+      e.preventDefault();
+      e.stopPropagation();
+      var pdfUrl =
+        pdfLink.getAttribute("data-pdf-url") || pdfLink.getAttribute("href");
+      if (pdfUrl) loadPdf(pdfUrl, pdfLink.textContent.trim());
+      return;
+    }
+
     var link = findDetailLink(e.target);
     if (!link) return;
     if (e.defaultPrevented) return;
