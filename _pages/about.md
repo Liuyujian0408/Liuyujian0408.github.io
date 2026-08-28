@@ -101,7 +101,7 @@ An end-to-end WSI framework that turns the slide resolution pyramid into cross-s
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/syncanimation.png' alt="Fig. 1 SyncAnimation" width="100%"><div class="badge">Accepted by IJCAI</div></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/syncanimation.png' alt="Fig. 1 SyncAnimation" width="100%"><div class="badge">Accepted by IJCAI (Oral)</div></div></div>
 <div class='paper-box-text' markdown="1">
 
 **SyncAnimation: A Real-Time End-to-End Framework for Audio-Driven Human Pose and Talking Head Animation**
@@ -110,7 +110,7 @@ An end-to-end WSI framework that turns the slide resolution pyramid into cross-s
 
 A real-time NeRF talking avatar that jointly synthesizes audio-synchronized head pose, facial expression, and lip motion in one pipeline.
 
-<a class="js-project-detail" href="/projects/syncanimation/" data-detail-url="/projects/syncanimation/">Details</a> [Project](https://syncanimation.github.io/) [arXiv](https://arxiv.org/abs/2501.14646)
+<a class="js-project-detail" href="/projects/syncanimation/" data-detail-url="/projects/syncanimation/">Details</a> [Project](https://aishiweilai.github.io/syncanimation.github.io/) [arXiv](https://arxiv.org/abs/2501.14646)
 
 </div>
 </div>
