@@ -71,7 +71,7 @@ Predicts protein–ligand binding affinity from electron-density point clouds, r
 
 Reconstructs animatable 3D Gaussian head avatars from uncalibrated multi-view images by jointly refining camera poses, FLAME geometry, and Gaussian appearance.
 
-<a class="js-project-detail" href="/projects/anyavatar/" data-detail-url="/projects/anyavatar/">Details</a> [Project](https://aishiweilai.github.io/AnyAvatar.github.io/) [Code](https://github.com/AISHIWEILAI/AnyAvatar)
+<a class="js-project-detail" href="/projects/anyavatar/" data-detail-url="/projects/anyavatar/">Details</a> [Project](https://aishiweilai.github.io/AnyAvatar.github.io/) [Paper](https://dl.acm.org/doi/abs/10.1145/3767308.3835001) [Code](https://github.com/AISHIWEILAI/AnyAvatar)
 </div>
 </div>
 
@@ -84,7 +84,7 @@ Reconstructs animatable 3D Gaussian head avatars from uncalibrated multi-view im
 
 A multi-magnification MIL model that keeps spatial correspondence across scales and injects localized high-resolution evidence into aligned coarse regions.
 
-<a class="js-project-detail" href="/projects/mpfusion-mil/" data-detail-url="/projects/mpfusion-mil/">Details</a>
+<a class="js-project-detail" href="/projects/mpfusion-mil/" data-detail-url="/projects/mpfusion-mil/">Details</a> [Paper](https://dl.acm.org/doi/abs/10.1145/3767308.3835250)
 </div>
 </div>
 
@@ -97,7 +97,7 @@ Yuechuan Lin<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weipeng Zhang, Yanyu Fan, 
 
 An end-to-end WSI framework that turns the slide resolution pyramid into cross-scale super-resolution supervision, so the encoder and aggregator can be trained together.
 
-<a class="js-project-detail" href="/projects/pyrae2e/" data-detail-url="/projects/pyrae2e/">Details</a>
+<a class="js-project-detail" href="/projects/pyrae2e/" data-detail-url="/projects/pyrae2e/">Details</a> [Paper](https://eccv.ecva.net/virtual/2026/poster/3340)
 </div>
 </div>
 
@@ -138,7 +138,7 @@ Shows that a small set of informative high-resolution patches, selected and reco
 
 Improves 3D Gaussian head avatars by jointly correcting facial geometry and recovering texture during rendering, instead of relying on a frozen tracked mesh.
 
-<a class="js-project-detail" href="/projects/mogaface/" data-detail-url="/projects/mogaface/">Details</a> <a class="js-project-pdf" href="/files/MoGaFace_Poster.pdf" data-pdf-url="/files/MoGaFace_Poster.pdf">Poster</a> [Project](https://mogaface.github.io/) [arXiv](https://arxiv.org/abs/2508.01218)
+<a class="js-project-detail" href="/projects/mogaface/" data-detail-url="/projects/mogaface/">Details</a> <a class="js-project-pdf" href="/files/MoGaFace_Poster.pdf" data-pdf-url="/files/MoGaFace_Poster.pdf">Poster</a> [Project](https://mogaface.github.io/) [Code](https://github.com/AISHIWEILAI/MoGaFace) [arXiv](https://arxiv.org/abs/2508.01218)
 
 </div>
 </div>
