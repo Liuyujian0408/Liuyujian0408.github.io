@@ -62,6 +62,18 @@ Predicts protein–ligand binding affinity from electron-density point clouds, r
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/lipid.png' alt="Fig. 1 Lipid Nanoparticles" width="100%"><div class="badge">Accepted by Nat. Commun. (JCR Q1, IF=18.1)</div></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Discovery of activable oncolytic ionizable lipid nanoparticles for selective cancer therapy**
+
+Hou-Bing Zhang<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weide Xu<sup>*</sup>, et al.
+
+Uses machine-learning-accelerated screening to discover activable oncolytic ionizable lipid nanoparticles for selective cancer therapy.
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/anyavatar.png' alt="Fig. 1 AnyAvatar" width="100%"><div class="badge">Accepted by ACM MM</div></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -153,18 +165,6 @@ Qingquan Wang, **Yujian Liu**, Chenchen Li, Bin Xu, Shidang Xu<sup>&dagger;</sup
 Reviews how machine learning can guide nanoparticle synthesis and formulation, and help model nano–bio interactions along the cancer drug-delivery pipeline, from circulation and tumor extravasation to penetration and cellular uptake.
 
 [Paper](https://doi.org/10.1002/advs.202503138)
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/lipid.png' alt="Fig. 1 Lipid Nanoparticles" width="100%"><div class="badge">Major Revision in Nat. Commun. (JCR Q1, IF=18.1)</div></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Discovery of activable oncolytic ionizable lipid nanoparticles for selective cancer therapy**
-
-Hou-Bing Zhang<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weide Xu<sup>*</sup>, et al.
-
-Uses machine-learning-accelerated screening to discover activable oncolytic ionizable lipid nanoparticles for selective cancer therapy.
 
 </div>
 </div>
