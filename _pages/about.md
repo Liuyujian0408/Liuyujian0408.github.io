@@ -51,7 +51,7 @@ I am currently applying to **PhD programs for Spring/Fall 2027** admission. Pros
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/ecloudbind.png' alt="Fig. 1 E-CloudBind" width="100%"><div class="badge">Accepted by Nat. Commun. (JCR Q1, IF=18.1)</div></div></div>
 <div class='paper-box-text' markdown="1">
 
-**An electron-density point-cloud framework for robust protein–ligand interaction prediction**
+**An Electron-Density Point-Cloud Framework for Robust Protein–Ligand Interaction Prediction**
 
 **Yujian Liu**<sup>*</sup>, Yutong Wang<sup>*</sup>, Qingquan Wang<sup>*</sup>, Meitang Peng, Yuan Chen, Yuechuan Lin, Dongxu Shen, Xiaoli Liu, Shidang Xu<sup>&dagger;</sup>, Bin Liu
 
@@ -65,7 +65,7 @@ Predicts protein–ligand binding affinity from electron-density point clouds, r
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/lipid.png' alt="Fig. 1 Lipid Nanoparticles" width="100%"><div class="badge">Accepted by Nat. Commun. (JCR Q1, IF=18.1)</div></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Discovery of activable oncolytic ionizable lipid nanoparticles for selective cancer therapy**
+**Discovery of Activable Oncolytic Ionizable Lipid Nanoparticles for Selective Cancer Therapy**
 
 Hou-Bing Zhang<sup>*</sup>, **Yujian Liu**<sup>*</sup>, Weide Xu<sup>*</sup>, et al.
 
